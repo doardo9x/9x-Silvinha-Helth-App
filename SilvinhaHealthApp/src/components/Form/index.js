@@ -34,7 +34,7 @@ export default function Form() {
         <Text style={styles.formLabel}> Altura</Text>
         <TextInput
             style={styles.input}
-            onChange={setHeight}
+            onChangeText={setHeight}
             value={height ?? ""}
             placeholder='Ex. 1.70'
             keyboardType='numeric'
@@ -42,7 +42,7 @@ export default function Form() {
         <Text style={styles.formLabel}> Peso</Text>
         <TextInput
             style={styles.input}
-            onChange={setWeight}
+            onChangeText={setWeight}
             value={weight ?? ""}
             placeholder='Ex. 80.360kgs'
             keyboardType='numeric'
